@@ -11,94 +11,94 @@ const AnalyticsReportComponent = ({ report }: Props) => (
     {/* Overall Summary */}
     <div>
       <div className="text-lg font-bold mb-2 flex items-center gap-2">
-        <span>📈 Overall Summary</span>
+        <span className="text-xl">📈 Overall Summary</span>
       </div>
-      <div className="text-gray-800">{report.overall_summary}</div>
+      <div className="text-gray-800 text-lg">{report.overall_summary}</div>
     </div>
 
     {/* Detailed Analytics Categories */}
     <div>
       <div className="text-lg font-bold mb-4 flex items-center gap-2">
-        <span>📊 Detailed Analytics Report</span>
+        <span className="text-xl">📊 Detailed Analytics Report</span>
       </div>
       <div className="space-y-6">
         {/* Pitch Adherence */}
         <div className="pb-4">
           <div className="font-semibold flex items-center gap-2">
-            <span>Pitch Adherence</span>
-            <span className="text-sm text-blue-700">{report.pitch_adherence.score} / 5</span>
+            <span className="text-xl">Pitch Adherence</span>
+            <span className="text-blue-700 text-lg ">{report.pitch_adherence.score} / 5</span>
           </div>
           <div className="text-gray-700 mt-2">
-            <div className="font-medium text-gray-900">Justification:</div>
-            <div>{report.pitch_adherence.justification}</div>
+            <div className="font-medium text-gray-900 text-lg">Justification:</div>
+            <div className=" text-lg " >{report.pitch_adherence.justification}</div>
           </div>
           <div className="text-gray-700 mt-2">
-            <div className="font-medium text-gray-900">Improvement Suggestion:</div>
-            <div>{report.pitch_adherence.improvement_suggestion}</div>
+            <div className="font-medium text-gray-900 text-lg">Improvement Suggestion:</div>
+            <div className="text-lg" >{report.pitch_adherence.improvement_suggestion}</div>
           </div>
         </div>
 
         {/* Confidence */}
         <div className="pb-4">
           <div className="font-semibold flex items-center gap-2">
-            <span>Confidence</span>
-            <span className="text-sm text-blue-700">{report.confidence.score} / 5</span>
+            <span className="text-xl" >Confidence</span>
+            <span className="text-blue-700 text-lg">{report.confidence.score} / 5</span>
           </div>
           <div className="text-gray-700 mt-2">
-            <div className="font-medium text-gray-900">Justification:</div>
-            <div>{report.confidence.justification}</div>
+            <div className="font-medium text-gray-900 text-lg ">Justification:</div>
+            <div className="text-lg" >{report.confidence.justification}</div>
           </div>
           <div className="text-gray-700 mt-2">
-            <div className="font-medium text-gray-900">Improvement Suggestion:</div>
-            <div>{report.confidence.improvement_suggestion}</div>
+            <div className="font-medium text-gray-900 text-lg ">Improvement Suggestion:</div>
+            <div className=" text-lg " >{report.confidence.improvement_suggestion}</div>
           </div>
         </div>
 
         {/* Technical Knowledge */}
         <div className="pb-4">
           <div className="font-semibold flex items-center gap-2">
-            <span>Technical Knowledge</span>
-            <span className="text-sm text-blue-700">{report.technical_knowledge.score} / 5</span>
+            <span className="text-xl">Technical Knowledge</span>
+            <span className="text-blue-700 text-lg ">{report.technical_knowledge.score} / 5</span>
           </div>
           <div className="text-gray-700 mt-2">
-            <div className="font-medium text-gray-900">Justification:</div>
-            <div>{report.technical_knowledge.justification}</div>
+            <div className="font-medium text-gray-900 text-lg ">Justification:</div>
+            <div className=" text-lg " >{report.technical_knowledge.justification}</div>
           </div>
           <div className="text-gray-700 mt-2">
-            <div className="font-medium text-gray-900">Improvement Suggestion:</div>
-            <div>{report.technical_knowledge.improvement_suggestion}</div>
+            <div className="font-medium text-gray-900 text-lg ">Improvement Suggestion:</div>
+            <div className=" text-lg " >{report.technical_knowledge.improvement_suggestion}</div>
           </div>
         </div>
 
         {/* Customer Pain Points Connection */}
         <div className="pb-4">
           <div className="font-semibold flex items-center gap-2">
-            <span>Customer Pain Points Connection</span>
-            <span className="text-sm text-blue-700">{report.customer_pain_points_connection.score} / 5</span>
+            <span className="text-xl">Customer Pain Points Connection</span>
+            <span className="text-blue-700 text-lg ">{report.customer_pain_points_connection.score} / 5</span>
           </div>
           <div className="text-gray-700 mt-2">
-            <div className="font-medium text-gray-900">Justification:</div>
-            <div>{report.customer_pain_points_connection.justification}</div>
+            <div className="font-medium text-gray-900 text-lg ">Justification:</div>
+            <div className=" text-lg " >{report.customer_pain_points_connection.justification}</div>
           </div>
           <div className="text-gray-700 mt-2">
-            <div className="font-medium text-gray-900">Improvement Suggestion:</div>
-            <div>{report.customer_pain_points_connection.improvement_suggestion}</div>
+            <div className="font-medium text-gray-900 text-lg ">Improvement Suggestion:</div>
+            <div className=" text-lg " >{report.customer_pain_points_connection.improvement_suggestion}</div>
           </div>
         </div>
 
         {/* Active Demonstration */}
         <div className="pb-4">
           <div className="font-semibold flex items-center gap-2">
-            <span>Active Demonstration</span>
-            <span className="text-sm text-blue-700">{report.active_demonstration.score} / 5</span>
+            <span className="text-xl" >Active Demonstration</span>
+            <span className="text-blue-700 text-lg ">{report.active_demonstration.score} / 5</span>
           </div>
           <div className="text-gray-700 mt-2">
-            <div className="font-medium text-gray-900">Justification:</div>
-            <div>{report.active_demonstration.justification}</div>
+            <div className="font-medium text-gray-900 text-lg ">Justification:</div>
+            <div className=" text-lg " >{report.active_demonstration.justification}</div>
           </div>
           <div className="text-gray-700 mt-2">
-            <div className="font-medium text-gray-900">Improvement Suggestion:</div>
-            <div>{report.active_demonstration.improvement_suggestion}</div>
+            <div className="font-medium text-gray-900 text-lg ">Improvement Suggestion:</div>
+            <div className=" text-lg " >{report.active_demonstration.improvement_suggestion}</div>
           </div>
         </div>
 
@@ -109,64 +109,64 @@ const AnalyticsReportComponent = ({ report }: Props) => (
           {/* Eye Contact */}
           <div className="pb-4">
             <div className="font-semibold flex items-center gap-2">
-              <span>Eye Contact</span>
-              <span className="text-sm text-blue-700">{report.eye_contact.score} / 5</span>
+              <span className="text-xl" >Eye Contact</span>
+              <span className="text-blue-700 text-lg ">{report.eye_contact.score} / 5</span>
             </div>
             <div className="text-gray-700 mt-2">
-              <div className="font-medium text-gray-900">Justification:</div>
-              <div>{report.eye_contact.justification}</div>
+              <div className="font-medium text-gray-900 text-lg ">Justification:</div>
+              <div className=" text-lg " >{report.eye_contact.justification}</div>
             </div>
             <div className="text-gray-700 mt-2">
-              <div className="font-medium text-gray-900">Improvement Suggestion:</div>
-              <div>{report.eye_contact.improvement_suggestion}</div>
+              <div className="font-medium text-gray-900 text-lg ">Improvement Suggestion:</div>
+              <div className=" text-lg " >{report.eye_contact.improvement_suggestion}</div>
             </div>
           </div>
 
           {/* Body Language */}
           <div className="pb-4">
             <div className="font-semibold flex items-center gap-2">
-              <span>Body Language</span>
-              <span className="text-sm text-blue-700">{report.body_language.score} / 5</span>
+              <span className="text-xl" >Body Language</span>
+              <span className="text-blue-700 text-lg ">{report.body_language.score} / 5</span>
             </div>
             <div className="text-gray-700 mt-2">
-              <div className="font-medium text-gray-900">Justification:</div>
-              <div>{report.body_language.justification}</div>
+              <div className="font-medium text-gray-900 text-lg ">Justification:</div>
+              <div className=" text-lg " >{report.body_language.justification}</div>
             </div>
             <div className="text-gray-700 mt-2">
-              <div className="font-medium text-gray-900">Improvement Suggestion:</div>
-              <div>{report.body_language.improvement_suggestion}</div>
+              <div className="font-medium text-gray-900 text-lg ">Improvement Suggestion:</div>
+              <div className=" text-lg " >{report.body_language.improvement_suggestion}</div>
             </div>
           </div>
 
           {/* Gestures */}
           <div className="pb-4">
             <div className="font-semibold flex items-center gap-2">
-              <span>Gestures</span>
-              <span className="text-sm text-blue-700">{report.gestures.score} / 5</span>
+              <span className="text-xl" >Gestures</span>
+              <span className="text-blue-700 text-lg ">{report.gestures.score} / 5</span>
             </div>
             <div className="text-gray-700 mt-2">
-              <div className="font-medium text-gray-900">Justification:</div>
-              <div>{report.gestures.justification}</div>
+              <div className="font-medium text-gray-900 text-lg ">Justification:</div>
+              <div className=" text-lg " >{report.gestures.justification}</div>
             </div>
             <div className="text-gray-700 mt-2">
-              <div className="font-medium text-gray-900">Improvement Suggestion:</div>
-              <div>{report.gestures.improvement_suggestion}</div>
+              <div className="font-medium text-gray-900 text-lg ">Improvement Suggestion:</div>
+              <div className=" text-lg " >{report.gestures.improvement_suggestion}</div>
             </div>
           </div>
 
           {/* Appearance */}
           <div className="pb-4">
             <div className="font-semibold flex items-center gap-2">
-              <span>Appearance</span>
-              <span className="text-sm text-blue-700">{report.appearance.score} / 5</span>
+              <span className="text-xl" >Appearance</span>
+              <span className="text-blue-700 text-lg ">{report.appearance.score} / 5</span>
             </div>
             <div className="text-gray-700 mt-2">
-              <div className="font-medium text-gray-900">Justification:</div>
-              <div>{report.appearance.justification}</div>
+              <div className="font-medium text-gray-900 text-lg ">Justification:</div>
+              <div className=" text-lg " >{report.appearance.justification}</div>
             </div>
             <div className="text-gray-700 mt-2">
-              <div className="font-medium text-gray-900">Improvement Suggestion:</div>
-              <div>{report.appearance.improvement_suggestion}</div>
+              <div className="font-medium text-gray-900 text-lg ">Improvement Suggestion:</div>
+              <div className=" text-lg " >{report.appearance.improvement_suggestion}</div>
             </div>
           </div>
         </div>
@@ -181,15 +181,15 @@ const AnalyticsReportComponent = ({ report }: Props) => (
       <div className="space-y-4">
         <div>
           <div className="font-semibold text-green-700 flex items-center gap-2">
-            <span>✅ Highlights</span>
+            <span className="text-xl" >✅ Highlights</span>
           </div>
-          <div className="text-gray-700">{report.dynamic_delivery_analysis.highlights}</div>
+          <div className="text-gray-700 text-lg ">{report.dynamic_delivery_analysis.highlights}</div>
         </div>
         <div>
           <div className="font-semibold text-amber-700 flex items-center gap-2">
-            <span>⚠️ Lowlights</span>
+            <span className="text-xl" >⚠️ Lowlights</span>
           </div>
-          <div className="text-gray-700">{report.dynamic_delivery_analysis.lowlights}</div>
+          <div className="text-gray-700 text-lg ">{report.dynamic_delivery_analysis.lowlights}</div>
         </div>
       </div>
     </div>
@@ -197,9 +197,9 @@ const AnalyticsReportComponent = ({ report }: Props) => (
     {/* Final Improvement Suggestion */}
     <div>
       <div className="font-semibold flex items-center gap-2 mt-4 mb-1">
-        <span>💡 Final Improvement Suggestion:</span>
+        <span className="text-xl" >💡 Final Improvement Suggestion:</span>
       </div>
-      <div className="text-gray-900 bg-amber-50 p-4 rounded-lg border border-amber-200">
+      <div className="text-gray-900 bg-amber-50 p-4 rounded-lg border border-amber-200 text-lg ">
         {report.final_improvement_suggestion}
       </div>
     </div>
@@ -207,9 +207,9 @@ const AnalyticsReportComponent = ({ report }: Props) => (
     {/* Key Coaching Takeaway */}
     <div>
       <div className="font-semibold flex items-center gap-2 mt-4 mb-1">
-        <span>🎯 Key Coaching Takeaway:</span>
+        <span className="text-xl" >🎯 Key Coaching Takeaway:</span>
       </div>
-      <div className="text-gray-900 bg-blue-50 p-4 rounded-lg border border-blue-200">
+      <div className="text-gray-900 bg-blue-50 p-4 rounded-lg border border-blue-200 text-lg ">
         {report.key_coaching_takeaway}
       </div>
     </div>

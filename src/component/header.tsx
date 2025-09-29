@@ -6,9 +6,9 @@ import NavLink from "@/component/NavLink";
 
 const navLinks = [
   { label: "Home", href: "/", icon: "/images/icons/nav_icon1.svg" },
-  { label: "About", href: "/about", icon: "/images/icons/nav_icon2.svg" },
-  { label: "Services", href: "/services", icon: "/images/icons/nav_icon3.svg" },
-  { label: "Contact", href: "/contact", icon: "/images/icons/nav_icon4.svg" },
+  { label: "About", href: "/", icon: "/images/icons/nav_icon2.svg" },
+  { label: "Services", href: "/", icon: "/images/icons/nav_icon3.svg" },
+  { label: "Contact", href: "/", icon: "/images/icons/nav_icon4.svg" },
 ];
 
 export default function Header() {
@@ -50,7 +50,7 @@ export default function Header() {
         <nav className="flex flex-col gap-5">
           {navLinks.map((link) => (
             <NavLink
-              key={link.href}
+              key={link.label}
               href={link.href}
               className="group relative items-center gap-3 hover:text-blue-400 mr-5 pr-2 flex justify-end bg-transparent hover:bg-[rgb(52,153,255,0.24)] hover:rounded-r-2xl transition-all duration-300"
             >
