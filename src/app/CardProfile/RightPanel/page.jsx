@@ -217,8 +217,8 @@ const RightPanel = () => {
 };
 
 const nudges = [
-  { id: 1, title: "", description: "Hi Valarmathi, addressing pain points like low water pressure from 242s showed real insight into what customers care about. This week, start one feature with a simple 'Here's how this helps with...' to draw them in even more. Your knowledge shines through—excited for what comes next! 💡" },
-  { id: 2, title: "", description: "Valarmathi, pointing out the pulsator at 00:19 during the demo was a clear, effective touch. Quick note: Aim for open hand movements instead of clasped ones around 03:04 to keep the energy flowing smoothly. Your confidence is a real asset here.👐" },
+  { id: 1, title: "", description: "Hi Durga, the energy in your convertible options from 37s is there, and tying in vacation needs is a good start. But honestly, that quicker pace on tech like Nano Sheet at 152s comes off a bit rushed—it's holding back the full impact. Dial it in with a solid 'picture this' pause this week to make those details stick. You've got the potential; let's sharpen it up. ⚡" },
+  { id: 2, title: "", description: "Durga, linking features to trips and power saves helps, but the clasped hands at 07:38? It's pulling down that confident edge a notch—customers notice. Switch to open gestures to really own the room. You're close to nailing it; one tweak away from great.🙌👐" },
 
 ];
 
