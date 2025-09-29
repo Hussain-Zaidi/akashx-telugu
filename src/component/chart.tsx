@@ -16,13 +16,15 @@ interface ChartProps {
 }
 
 const DynamicBarChart: React.FC<ChartProps> = ({ data }) => {
-  const barSizeRem = 2; // 2rem
-  const barSizePx = barSizeRem * 16; // convert rem to px
+  const barSizeRem = 30; // 2rem
+  const barSizePx = barSizeRem; // convert rem to px
 
   return (
-    <div className="w-full h-[30rem] cursor-pointer">
+    <div className="overflow-x-auto w-full scrollbar-thin">
+
+    <div className="w-full h-[32rem] cursor-pointer min-w-250 ">
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={data} barSize={barSizePx} margin={{ top: 20, right: 30, left: 20, bottom: 8 * 10 }}>
+        <BarChart data={data} barSize={barSizePx} margin={{ top: 20, right: 10, left: 10, bottom: 0 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
             dataKey="name"
@@ -37,6 +39,7 @@ const DynamicBarChart: React.FC<ChartProps> = ({ data }) => {
         </BarChart>
       </ResponsiveContainer>
     </div>
+            </div>
   );
 };
 

@@ -8,7 +8,7 @@ type VideoComponentProps = {
 };
 const VideoComponent = ({ url ,title }: VideoComponentProps) => (
   <div className="w-full h-auto">
-    <video controls className="w-full rounded-lg shadow-lg" src={url}></video>
+    <video controls className="w-full rounded-lg shadow-lg max-h-[26rem]" src={url}></video>
     <Link href={url} target="blank" >
         <div className="flex items-center p-6 gap-2.5">
             <div className=" text-[#3499FF] text-base" >{title}</div>

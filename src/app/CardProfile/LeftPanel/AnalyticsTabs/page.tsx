@@ -6,27 +6,18 @@ import DynamicBarChart from "@/component/chart";
 
 import VideoComponent from './VideoComponent';
 import TextBlockComponent from './TextBlockComponent';
-import { videoData, textBlocks } from './data';
+import { videoData, textBlocks , chartData, sqlQuery } from './data';
 import Image from "next/image";
 import { useRef } from "react";
 
-  const sqlQuery = `
-SELECT 
-  cognitive_rate_per_rubric(transcript, 'key-points coverage') AS key_points_score,
-  cognitive_rate_per_rubric(transcript, 'pain-points coverage') AS pain_points_score,
-  cognitive_rate_per_rubric(transcript, 'feature demonstration') AS feature_demo_score,
-  cognitive_rate_per_rubric(transcript, 'competition comparison') AS competition_score,
-  cognitive_rate_per_rubric(transcript, 'overall confidence') AS confidence_score
-FROM 
-  sales_pitch_transcripts
-WHERE 
-  rep_name = 'Bharat Rawat'
-  AND video_upload_date = (
-    SELECT MAX(video_upload_date)
-    FROM sales_pitch_transcripts
-    WHERE rep_name = 'Bharat Rawat'
-  );
-`;
+
+
+// Define allowed languages
+type Language = "english" | "hindi" | "telugu" | "tamil";
+
+interface ContentProps {
+  type: Language; // restrict type to valid keys
+}
 
 const AnalyticsTabs = () => {
   const [activeTab, setActiveTab] = useState('graph');
@@ -36,30 +27,31 @@ const AnalyticsTabs = () => {
     { id: 'video', label: 'Video & Transcripts' },
     { id: 'hindi_video', label: 'वीडियो और प्रतिलेख' },
     // { id: 'tamil_video', label: 'వీడియో & ట్రాన్స్క్రిప్ట్స్' },
-    { id: 'telgu_video', label: 'వీడియో & ట్రాన్స్క్రిప్ట్స్' },
+    // { id: 'telgu_video', label: 'వీడియో & ట్రాన్స్క్రిప్ట్స్' },
     { id: 'query', label: 'Query' }
   ];
 
   const renderTabContent = () => {
     switch (activeTab) {
       case 'graph':
-        return <GraphContent />;
+        return <GraphContent type={'english'} />;
       case 'video':
         return <VideoContent type={'english'} />;
       case 'hindi_video':
         return <VideoContent type={'hindi'} />;
-      case 'telgu_video':
-        return <VideoContent type={'telugu'} />;
+      // case 'tamil_video':
+        // return <VideoContent type={'tamil'} />;
+      // case 'telgu_video':
+        // return <VideoContent type={'telugu'} />;
       case 'query':
         return <QueryContent />;
       default:
-        return <GraphContent />;
+        return <GraphContent type={'english'} />;
     }
   };
 
   return (
     <div className="rounded-xl border-[#8EA1BD] border overflow-auto">
-      {/* Tabs Navigation */}
       <div className="flex border-b border-gray-200 bg-[#EBF1FA] p-[1.4rem_2.5rem_0rem_2.5rem] gap-10 overflow-auto">
         {tabs.map((tab) => (
           <button
@@ -75,8 +67,6 @@ const AnalyticsTabs = () => {
           </button>
         ))}
       </div>
-
-      {/* Tab Content */}
       <div className="sm:h-[36.25rem] h-[calc(100vh_-_10rem)] p-6">
         {renderTabContent()}
       </div>
@@ -84,28 +74,39 @@ const AnalyticsTabs = () => {
   );
 };
 
-// Tab Content Components
-const GraphContent = () => {
-  const chartData = [
-    { name: "Key-points Coverage", score: 4 },
-    { name: "Pain-points Coverage", score: 3 },
-    { name: "Feature Demonstration", score: 3 },
-    { name: "Competition Comparison", score: 2 },
-    { name: "Overall Confidence", score: 3 },
-    { name: "Overall Confidence", score: 3 },
-    { name: "Overall Confidence", score: 3 },
-    { name: "Overall Confidence", score: 3 },
-  ];
 
+
+
+
+
+
+
+
+
+
+
+// Tab Content Components
+const GraphContent: React.FC<ContentProps> = ({ type }) => {
+  console.log(type)
+
+const currentChartData = chartData[type];
   return (
     <div>
     <div className="m-auto w-[100%] overflow-hidden">
-      <h2 className="text-lg font-semibold mb-4">Indexes vs Score</h2>
-      <DynamicBarChart data={chartData} />
+      <DynamicBarChart data={currentChartData} />
     </div>
     </div>
   );
 };
+
+
+
+
+
+
+
+
+
 
 interface TextBlock {
   time: string;
@@ -114,14 +115,8 @@ interface TextBlock {
   tags: string[];
 }
 
-// Define allowed languages
-type Language = "english" | "hindi" | "telugu";
 
-interface VideoContentProps {
-  type: Language; // restrict type to valid keys
-}
-
-const VideoContent: React.FC<VideoContentProps> = ({ type }) => {
+const VideoContent: React.FC<ContentProps> = ({ type }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -144,14 +139,13 @@ const VideoContent: React.FC<VideoContentProps> = ({ type }) => {
     }
   };
 
-const lang: "english" | "hindi" | "telugu" = "hindi";
-const currentVideo = videoData[lang][0];
+const currentVideo = videoData[type][0];
   return (
     <div ref={containerRef} className="h-full bg-white">
       <div className="flex flex-col lg:flex-row gap-8 h-full">
         {/* Video Panel */}
-        <div className="lg:w-1/2 w-full sticky top-8 bg-black rounded-xl">
-          <VideoComponent url={currentVideo.url} title={currentVideo.title} />
+        <div key={currentVideo.url} className="lg:w-1/2 w-full sticky top-8 bg-black rounded-xl">
+          <VideoComponent  url={currentVideo.url} title={currentVideo.title} />
         </div>
 
         {/* Text Panel */}
@@ -173,11 +167,11 @@ const currentVideo = videoData[lang][0];
               className="w-6 h-6"
             />
           </button>
-
-          {/* Text blocks */}
-          {textBlocks[type].map((block: TextBlock, idx: number) => (
-            <TextBlockComponent key={idx} block={block} />
-          ))}
+            <div className='overflow-auto h-full scrollbar-thin' >
+            {textBlocks[type].map((block: TextBlock, idx: number) => (
+              <TextBlockComponent key={idx} block={block} />
+            ))}
+            </div>
         </div>
       </div>
     </div>
@@ -186,11 +180,16 @@ const currentVideo = videoData[lang][0];
 
 
 
+
+
+
+
+
 const QueryContent = () => {
   return (
     <div style={{ fontFamily: "monospace" }}>
       <h1>SQL Query</h1>
-      <pre>
+      <pre className='whitespace-break-spaces' >
         <code>{sqlQuery}</code>
       </pre>
     </div>

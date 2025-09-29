@@ -1,6 +1,7 @@
 // components/RightPanel.jsx
 import Image from "next/image";
 import WeeklyNudges from "./WeeklyNudges";
+import Link from "next/link";
 const RightPanel = () => {
   return (
     <div className="rounded-xl bg-[#F4F8FF] p-5">
@@ -20,7 +21,7 @@ const RightPanel = () => {
             Pitch Adherence
             </span>
             <span className="text-base text-[#556E94]">
-            Structured (5) • Un-Structured(3)
+            Structured (3) • Un-Structured(2)
             </span>
         </div>
       </div>
@@ -135,12 +136,12 @@ const RightPanel = () => {
           height={20}
           className="w-7 h-7"
           />
-          <span className="text-lg font-medium text-[#03070D]">Structured Data (5)</span>
+          <span className="text-lg font-medium text-[#03070D]">Structured Data (3)</span>
         </div>
         <div className="space-y-2">
-          {[1, 2, 3, 4, 5].map((item) => (
+          {structuredData.map((item) => (
             <div
-              key={item}
+              key={item.title}
               className="flex items-center justify-between  p-1"
             >
               <div className="flex items-center gap-2.5">
@@ -151,7 +152,7 @@ const RightPanel = () => {
               height={20}
               className="w-5 h-5"
               />
-              <span className="text-base font-normal ">Table Name-{item}</span>
+              <span className="text-base font-normal ">{item.title}</span>
             </div>
               <span className="text-sm text-[#556E94]">
                 ROWS (20) COLUMN (10)
@@ -171,25 +172,24 @@ const RightPanel = () => {
           height={20}
           className="w-7 h-7"
           />
-          <span className="text-lg font-medium text-[#03070D]">Unstructured Data (3)</span>
+          <span className="text-lg font-medium text-[#03070D]">Unstructured Data (2)</span>
         </div>
         <div className="space-y-2">
-          {[1, 2, 3].map((item) => (
-            <div
-              key={item}
-              className="flex items-center  p-1"
-            >
-              <div className="flex items-center gap-2.5">
-              <Image
-              src={'/images/icons/file.svg'}
-              alt={'icon'}
-              width={20}
-              height={20}
-              className="w-5 h-5"
-              />
-              <span className="text-base font-normal ">File Name-{item}</span>
-            </div>
-            </div>
+          {unstructuredData.map((item) => (
+            <Link key={item.title} href={item.url} target="blank" className="flex items-center  p-1" >
+              <div>
+                <div className="flex items-center gap-2.5">
+                <Image
+                src={'/images/icons/file.svg'}
+                alt={'icon'}
+                width={20}
+                height={20}
+                className="w-5 h-5"
+                />
+                <span className="text-base font-normal ">{item.title}</span>
+              </div>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -217,10 +217,35 @@ const RightPanel = () => {
 };
 
 const nudges = [
-  { id: 1, title: "Nudge 1", description: "Remember to follow up with leads Remember to follow up with leads." },
-  { id: 2, title: "Nudge 2", description: "Update your sales pitch." },
-  { id: 3, title: "Nudge 3", description: "Check your KPI metrics." },
-  { id: 4, title: "Nudge 4", description: "Prepare next week's plan." },
+  { id: 1, title: "", description: "Hi Deepak, your explanations of features like the coin design drum really hit the mark—customers can see the value right away. This week, try adding a short pause after each big point, like after zero-pressure tech, to give folks time to take it in. You're off to a great start—keep building on that! 😊" },
+  { id: 2, title: "", description: "Deepak, the hands-on demo with the pulsator at 01:55 was spot on for making things clear. Just a gentle reminder: After showing a feature, glance back at your customer for a quick connection—it strengthens that trust. You've got such a natural way with it. 👀" },
+
+];
+
+const structuredData = [
+  {
+    title: "Employees Table",
+    url: "/data/structured/employees.csv", // replace with actual path or URL
+  },
+  {
+    title: "Presentations Table",
+    url: "/data/structured/presentations.csv", // replace with actual path or URL
+  },
+  {
+    title: "Performance_KPIs Table",
+    url: "/data/structured/performance_kpis.csv", // replace with actual path or URL
+  },
+];
+
+const unstructuredData = [
+  {
+    title: "Video Link URL",
+    url: "/videos/hindi.mp4", // replace with actual video URL
+  },
+  {
+    title: "Translation.txt",
+    url: "/hindi_readable_transcript.txt", // optional
+  },
 ];
 
 export default RightPanel;
