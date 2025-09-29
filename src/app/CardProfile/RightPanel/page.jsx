@@ -217,8 +217,8 @@ const RightPanel = () => {
 };
 
 const nudges = [
-  { id: 1, title: "", description: "Hi Deepak, your explanations of features like the coin design drum really hit the mark—customers can see the value right away. This week, try adding a short pause after each big point, like after zero-pressure tech, to give folks time to take it in. You're off to a great start—keep building on that! 😊" },
-  { id: 2, title: "", description: "Deepak, the hands-on demo with the pulsator at 01:55 was spot on for making things clear. Just a gentle reminder: After showing a feature, glance back at your customer for a quick connection—it strengthens that trust. You've got such a natural way with it. 👀" },
+  { id: 1, title: "", description: "Hi Valarmathi, addressing pain points like low water pressure from 242s showed real insight into what customers care about. This week, start one feature with a simple 'Here's how this helps with...' to draw them in even more. Your knowledge shines through—excited for what comes next! 💡" },
+  { id: 2, title: "", description: "Valarmathi, pointing out the pulsator at 00:19 during the demo was a clear, effective touch. Quick note: Aim for open hand movements instead of clasped ones around 03:04 to keep the energy flowing smoothly. Your confidence is a real asset here.👐" },
 
 ];
 
@@ -240,11 +240,11 @@ const structuredData = [
 const unstructuredData = [
   {
     title: "Video Link URL",
-    url: "/videos/hindi.mp4", // replace with actual video URL
+    url: "/videos/telugu.mp4", // replace with actual video URL
   },
   {
     title: "Translation.txt",
-    url: "/hindi_readable_transcript.txt", // optional
+    url: "/telugu_readable_transcript.txt", // optional
   },
 ];
 

@@ -25,9 +25,9 @@ const AnalyticsTabs = () => {
   const tabs = [
     { id: 'graph', label: 'Graph' },
     { id: 'video', label: 'Video & Transcripts' },
-    { id: 'hindi_video', label: 'वीडियो और प्रतिलेख' },
-    // { id: 'tamil_video', label: 'వీడియో & ట్రాన్స్క్రిప్ట్స్' },
-    // { id: 'telgu_video', label: 'వీడియో & ట్రాన్స్క్రిప్ట్స్' },
+    // { id: 'hindi_video', label: 'वीडियो और प्रतिलेख' },
+    // { id: 'tamil_video', label: 'வீடியோ & டிரான்ஸ்கிரிப்டுகள்' },
+    { id: 'telgu_video', label: 'వీడియో & ట్రాన్స్క్రిప్ట్స్' },
     { id: 'query', label: 'Query' }
   ];
 
@@ -37,12 +37,12 @@ const AnalyticsTabs = () => {
         return <GraphContent type={'english'} />;
       case 'video':
         return <VideoContent type={'english'} />;
-      case 'hindi_video':
-        return <VideoContent type={'hindi'} />;
+      // case 'hindi_video':
+        // return <VideoContent type={'hindi'} />;
       // case 'tamil_video':
         // return <VideoContent type={'tamil'} />;
-      // case 'telgu_video':
-        // return <VideoContent type={'telugu'} />;
+      case 'telgu_video':
+        return <VideoContent type={'telugu'} />;
       case 'query':
         return <QueryContent />;
       default:
