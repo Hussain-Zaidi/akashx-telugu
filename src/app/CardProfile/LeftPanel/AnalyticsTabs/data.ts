@@ -3,47 +3,47 @@
 export const chartData = {
       english:[
           { name: "Pitch Adherence", score: 4 },
-          { name: "Confidence", score: 5 },
-          { name: "Technical Knowledge", score: 5 },
-          { name: "Customer Pain Points Connection", score: 5 },
-          { name: "Active Demonstration", score: 4 },
+          { name: "Confidence", score: 4 },
+          { name: "Technical Knowledge", score: 4 },
+          { name: "Customer Pain Points Connection", score: 4 },
+          { name: "Active Demonstration", score: 5 },
           { name: "Eye Contact", score: 4 },
           { name: "Body Language", score: 3 },
           { name: "Gestures", score: 4 },
           { name: "Appearance", score: 4 },
       ],
       hindi:[
-          { name: "Pitch Adherence", score: 3 },
+          { name: "Pitch Adherence", score: 4 },
           { name: "Confidence", score: 4 },
-          { name: "Technical Knowledge", score: 5 },
+          { name: "Technical Knowledge", score: 4 },
           { name: "Customer Pain Points Connection", score: 4 },
           { name: "Active Demonstration", score: 5 },
           { name: "Eye Contact", score: 4 },
           { name: "Body Language", score: 3 },
           { name: "Gestures", score: 4 },
-          { name: "Appearance", score: 5 },
+          { name: "Appearance", score: 4 },
       ],
       telugu:[
-          { name: "Pitch Adherence", score: 3 },
+          { name: "Pitch Adherence", score: 4 },
           { name: "Confidence", score: 4 },
-          { name: "Technical Knowledge", score: 5 },
+          { name: "Technical Knowledge", score: 4 },
           { name: "Customer Pain Points Connection", score: 4 },
           { name: "Active Demonstration", score: 5 },
           { name: "Eye Contact", score: 4 },
           { name: "Body Language", score: 3 },
           { name: "Gestures", score: 4 },
-          { name: "Appearance", score: 5 },
+          { name: "Appearance", score: 4 },
       ],
       tamil :[
-          { name: "Pitch Adherence", score: 3 },
+          { name: "Pitch Adherence", score: 4 },
           { name: "Confidence", score: 4 },
-          { name: "Technical Knowledge", score: 5 },
+          { name: "Technical Knowledge", score: 4 },
           { name: "Customer Pain Points Connection", score: 4 },
           { name: "Active Demonstration", score: 5 },
           { name: "Eye Contact", score: 4 },
           { name: "Body Language", score: 3 },
           { name: "Gestures", score: 4 },
-          { name: "Appearance", score: 5 },
+          { name: "Appearance", score: 4 },
       ]
   };
 
@@ -329,161 +329,180 @@ export const textBlocks = {
 
 
 
-  telugu: [
-    {
-      time: "[00:00 - 00:15]",
-      title: "",
-      text: "దిస్ ఈజ్ దుర్గ వరప్రసాద్ నేను శక్తి గొల్లపూడి నుంచి బ్రాంచ్ వాళ్ళు నేను మీకు ఇంట్రడ్యూస్ చేసేది గోద్రెజ్ వెల్వెట్స్ ఇది సెవెన్ కేజీ మోడల్ నెంబర్ వచ్చి ఎఫ్ టి డి ఎం లో మనకి మెజార్టీషన్స్ వచ్చి దీంట్లో లాస్ట్ టర్బో సిక్స్ పల్సర్ వస్తుంది.",
-      tags: []
-    },
-    {
-      time: "[00:15 - 00:30]",
-      title: "",
-      text: "ఈ లాస్ట్ టర్బో 6% వల్ల దీని లోపల మనకి సిక్స్ ఇన్నర్ ప్లేట్స్ ఉంటాయి. దీని వల్ల స్క్రబ్బింగ్ చాలా ఫాస్ట్ గా అవుతుంది మనకి అండ్ షర్టుగా ఏమైనా సాయిల్ ఉన్న ఈజీగా వదిలేస్తుంది అండ్ సెకండ్ వన్ వచ్చేసరికి ఫాబ్రిక్ సేఫ్టీన్ ఈ ఫాబ్రిక్స్ గ్రంధాల",
-      tags: []
-    },{
-      time: "[00:30 - 00:45]",
-      title: "",
-      text: "రిమైనింగ్ బ్రాండ్స్ లో ఈ డ్రమ్ము చాలా హోల్స్ పెద్ద పెద్ద హోల్స్ ఉంటాయి. దాని వల్ల వాటర్ ప్రెషర్ కూడా చాలా స్లో గా వస్తుంది. మనం గోద్రెజ్ మోడల్ లో వచ్చేసరికి హోల్స్ అని చిన్నగా ఉంటాయి. దీని వల్ల షర్ట్ మీద ఏమైనా మార్కాలో ఉన్న సో సబ్బు ఏమైనా మార్గాలు",
-      tags: []
-    },
-    {
-      time: "[00:45 - 01:01]",
-      title: "",
-      text: "ఉన్నా సరే చాలా ఫాస్ట్ గా ప్రెషర్ రావడం వల్ల వాటర్ ప్రెషర్ దీని వల్ల మనకి చాలా ఫాస్ట్ గా వాష్ అవుతుంది అండ్ లేడీస్ శారీస్ ఏమైనా దీంట్లో వాష్ చేసుకుని హెడ్ శారీస్ ఏమైనా దీన్ని దారాలు దీని లోపలికి వెళ్లకుండా చాలా సేఫ్ గా మనకు వాష్ అవుతుంది. ఫాబ్రికే",
-      tags: []
-    },{
-      time: "[01:01 - 01:16]",
-      title: "",
-      text: "డామేజ్ కాదు అండ్ త్రోడ్ వన్ వచ్చేసరికి జీరో ప్రెసెంట్ టెక్నాలజీ. జీరో ప్రెసెంట్ టెక్నాలజీ. దీంట్లో వచ్చేసరికి రిమైనింగ్ బ్రాండ్స్ లో ట్యాంక్ ఫీట్ మినిమం టెన్ ఫీట్ లో ఉంటే అప్పుడు హైట్ వాటర్ తీసుకోడానికి టైం",
-      tags: []
-    },
-    {
-      time: "[01:16 - 01:31]",
-      title: "",
-      text: "పట్టిద్ది ఇందులో వచ్చేసరికి మనకి ఫాస్ట్ గా తీసుకునేది దీని వల్ల మనకు వాష్ ప్రోగ్రాం కూడా చాలా ఈజీగా అవుతుంది. మనకు వాచ్ కూడా డిలీట్ కాదు ఆప్షనల్ మంచిగా అవుతుంది అండ్",
-      tags: []
-    },{
-      time: "[01:31 - 01:46]",
-      title: "",
-      text: "తర్వాత వచ్చేసరికి దీంట్లో ఎయిట్ టైప్స్ ఆఫ్ ప్రోగ్రాం ఉంది ఫస్ట్ వన్ ఇస్ మిక్స్డ్ ఫాబ్రిక్ మిక్స్డ్ ఫాబ్రిక్ వల్ల మనం ఏ క్లాస్ అయినా వేసుకోవచ్చు చాలా సేఫ్ గా వాష్ అవుతుంది అండ్ సెకండ్ వన్ ఇచ్చేసి వైట్స్ వైట్స్ నిండా చెట్లు అనేవి",
-      tags: []
-    },{
-      time: "[01:46 - 02:01]",
-      title: "",
-      text: "వైట్ పాంట్స్ గాని, వైట్ ఫాబ్రిక్ వేరు వేసిన మనకి వాషింగ్ చాలా ఫాస్ట్ గా అవుతుంది అండ్ దానికేమో మరకలు ఉన్న పోతుంది అండ్ రాబిట్ 30 సపోజ్ మీరు ఏమైనా ఫంక్షన్స్ కి వెళ్ళినా ఈవెంట్స్ కి వెళ్ళినా మరకలు లేకపోయినా దానికి స్విఫ్ట్ అని ఉంటాయి ఆ స్మెల్",
-      tags: []
-    },{
-      time: "[02:01 - 02:16]",
-      title: "",
-      text: "రాకుండా రాబిట్ థర్టీ వల్ల ఈ ఆప్షన్ మనం ఆన్ చేసుకొని వలన వాటి ఫాబ్రిక్ ఏమైనా స్మెల్ వచ్చినా ఈ వన్ వాష్ వల్ల ఈజీగా మనకి మురికి పోయిద్ది అండ్ స్మెల్ కూడా పోతుంది అండ్ బల్కి ఈ బలికి ఆప్షన్ వల్ల మనం బెడ్ షీట్లు ఏమైనా",
-      tags: []
-    },{
-      time: "[02:16 - 02:31]",
-      title: "",
-      text: "హెవీ క్లాసు వేసిన మనకి బల్క్ మోడల్ వల్ల ఈజీగా వాష్ అవుతుంది అండ్ బేబీ కేర్. చిన్న పిల్లలు బట్టలు గాని ఏమైనా వేసిన ఫ్యాబ్రిక్ ఏ మాత్రం డామేజ్ అవ్వకుండా వేసుకుందాం. అండ్ వుల్లెన్ బట్టలు కూడా మనం చేసుకోవచ్చు అండ్ మేజర్ ఇన్",
-      tags: []
-    },{
-      time: "[02:31 - 02:47]",
-      title: "",
-      text: "ది వచ్చేసి కప్లింగ్ మాక్సిమం ఇప్పుడు ఉన్న ఏరియాలో మొత్తం బోరు వాటర్ ఏ వాడుతున్న దాని వల్ల మనకి టప్ స్కేల్ ఫామ్ అవుతుంది. తెల్ల తెల్ల మచ్చలు రావడం అనేది దీని వల్ల మనకి ఏంటంటే ఈ తుపీకి పోవడం అలాంటి అవుతుంది టప్లీన్ ఆప్షన్ ఆన్ చేసుకోవడం",
-      tags: []
-    },{
-      time: "[02:47 - 03:02]",
-      title: "",
-      text: "వల్ల మనకి ఫాబ్రిక్స్ మార్చలేము అని వచ్చినా ఫాబ్రిక్ ఏం అంటుకోదు అండ్ ఈ మచ్చలు కూడా పోతే తప్పులేని ఆప్షన్ వల్ల అండ్ మనకు ఆర్ఎంపీస్ వచ్చేసి 12 ఇయర్స్ మోడల్ ఉంటుంది 3 ఇయర్స్ టోటల్ వారేంజ్ చేస్తుంది అండ్ స్కిల్స్ వచ్చేసి మన దగ్గర నుంచి ఐడిఎఫ్సి",
-      tags: []
-    },{
-      time: "[03:02 - 03:17]",
-      title: "",
-      text: "వచ్చింది ఫోర్ అవర్స్ ఉంది. హెడ్ బై జీరో అండ్ 10/2 ఇన్ సర్వీస్ సెంటర్ లో వచ్చి మనకి 700 ప్లస్ సర్వీస్ సెంటర్స్ ఉన్నాయి అండ్ స్టాప్ వచ్చేసి 4400 ప్లస్ స్టాప్ ఉన్నాడు సర్వీస్ లో కూడా ఏ ప్రాబ్లం ఉంది",
-      tags: []
-    },{
-      time: "[03:17 - 00:00]",
-      title: "",
-      text: "కదా 24 హౌర్స్ మనకి అందుబాటులో",
-      tags: []
-    },
-    // add more blocks
-  ],
+telugu: [
+  {
+    time: "[00:00 - 00:15]",
+    title: "",
+    text: "హాయ్ సర్ నా పేరు వెంకటేష్ నాయక్ నేను పిడుగురాళ్ల విజయదశలో గోడైజ్ పండుగ పని చేస్తున్నాను ఇప్పుడు మనం గోల్డెన్ బీసీ గురించి తెలుసుకుందాం . గోల్డ్ ఇండియన్ నెంబర్ వన్ బ్రాండ్ ఇది. దీనికి 108 సంవత్సరం",
+    tags: []
+  },
+  {
+    time: "[00:15 - 00:30]",
+    title: "",
+    text: "నుంచి నమ్మకంగా పనిచేస్తున్న ప్రయాణం ఇది. దీంట్లో ఈ మార్వెల్ 207 సి ఫీజు వైన్ కలర్ ఫ్యూచర్స్ ఏంది అని తెలుసుకుందాం",
+    tags: []
+  },
+  {
+    time: "[00:30 - 00:48]",
+    title: "",
+    text: "దీంట్లో",
+    tags: []
+  },
+  {
+    time: "[00:48 - 01:03]",
+    title: "",
+    text: "పెడితే అప్పుడు 24 డేస్ వరకు ఫ్రెషర్స్ ఇస్తుంది బ్యాక్టీరియా కానీ ఫంగస్ ఏం చేయకుండా మనకి ఇది యూస్ అవుతుంది అంటే అడ్వాన్స్ కూలింగ్ టెక్నల్స్ వస్తుంది. ఈ అడ్వాన్స్ గురించి టాబ్లెట్స్ ఏందంటే ఈ గ్యాస్ కట్టు వస్తది సర్ దాని",
+    tags: []
+  },
+  {
+    time: "[01:03 - 01:19]",
+    title: "",
+    text: "వల్ల మనకి కూలింగ్ అనేది త్వరగా లాస్ అవుతూ ఉంటుంది వెడల్పు కూడా చాలా ఎక్కువ ఉంటది ఏందంటే మనం ఇంట్లో ఒకదాని పక్కన ఒకటి పెట్టుకోవడానికి చాలా కంఫర్ట్ గా ఉంటుంది",
+    tags: []
+  },
+  {
+    time: "[01:19 - 01:37]",
+    title: "",
+    text: "అని లేకపోతే",
+    tags: []
+  },
+  {
+    time: "[01:37 - 01:52]",
+    title: "",
+    text: "2 లీటర్ వాటర్ కూడా పెట్టుకోవచ్చు త్వరగా కూలింగ్ ఇది స్టఫ్ అండ్ గ్లాస్ తో వస్తుంది వెయిట్ అవుతుంది 360 డిగ్రీస్ లేయర్స్ ఉంటుంది మనకి",
+    tags: []
+  },
+  {
+    time: "[01:52 - 02:11]",
+    title: "",
+    text: "అవకుండా ఉంటది. వెహికల్ కూడా చాలా ఆపుతది. ఇంకోటి ఏందంటే మనకి వెజిటబుల్ బాక్స్ ఉంది ఈ వెజిటబుల్ బాక్స్ ఏందంటే మనకి చాలా 16.4 l దాగు వస్తది చాలా",
+    tags: []
+  },
+  {
+    time: "[02:11 - 02:27]",
+    title: "",
+    text: "స్టోరీ ఎక్కువ చేసుకోవచ్చు. ఇంకోటి ఏదైనా ఇప్పుడు మనం కూరగాయలు పెట్టిన తర్వాత వ్లాగ్ చేస్తాం కదా ఈ లాక్ చేసిన తరువాత ఏమైతది మనకి ఏది తగలగా",
+    tags: []
+  },
+  {
+    time: "[02:27 - 02:42]",
+    title: "",
+    text: "చెమ్మ పడతది ఆ చెమ్మ పడటం లేదు అంటే మనకి ఇప్పుడు కూరల మీద వాటర్ పడటం వల్ల కుచ్చులు వస్తాయి ఆ పుచ్చులు రాకుండా ఈ హనీ మెటీరియల్ తీసుకుంటే ఆ చెమను పైకి రాకూడదు ఆ పైకి లాగడం వల్ల మనకి ఏందంటే ఎక్కువగా ఉంది దాని వల్ల మనం కూడా కూరగాయలు కొంచెం ఎక్కువ యూస్",
+    tags: []
+  },
+  {
+    time: "[02:42 - 02:57]",
+    title: "",
+    text: "చేసుకోవచ్చు. ఇంకోటి అండి 2 మనం ఆ దమ్సప్ 2 1/4 l బాటిల్ నాలుగు బాటిల్ వస్తది. నాలుగు పెట్టుకోవచ్చు ఇంకా లీటర్ బాటిల్ పెట్టుకోవచ్చు ఇంకా సింపుల్ గా చెప్పాలంటే మనం ఇంట్లో తెచ్చుకునే అవలం కానీ వెల్లుల్లి గాని చిన్న చిన్న పెట్టుకోవచ్చు",
+    tags: []
+  },
+  {
+    time: "[02:57 - 03:16]",
+    title: "",
+    text: "దానికి మనకి ఉండటం వలన అవుతుంది",
+    tags: []
+  },
+  {
+    time: "[03:16 - 03:55]",
+    title: "",
+    text: "25 25 జనవరి మ్యాజిక్ వరకు వస్తుంది కాబట్టి అంత బాగుంటుంది. దీంట్లో",
+    tags: []
+  },
+  {
+    time: "[04:10 - 04:29]",
+    title: "",
+    text: "మనం దీంట్లో రిజల్ట్స్ బానే ఉంటది. దీనికి కూడా మనకి కూలింగ్ అడ్వాన్స్ కూలింగ్ అంటున్నారు కదా",
+    tags: []
+  }
+],
 
-  english: [
-    {
-      time: "[00:00 - 00:15]",
-      title: "",
-      text: "This is Durga Varaprasad, from the Shakti Gollapudi branch. I am introducing you to the Godrej Velvets washing machine. This is a 7 kg model, model number FTDMT. A major feature of this machine is the Turbo 6 Pulsator.",
-      tags: []
-    },
-    {
-      time: "[00:15 - 00:30]",
-      title: "",
-      text: "Thanks to this Turbo 6 Pulsator, it has six inner plates. This enables very fast scrubbing, and if there's any soil on clothes, it easily removes it. The second feature is fabric safety. In other brands,",
-      tags: []
-    },{
-      time: "[00:30 - 00:45]",
-      title: "",
-      text: "the drum has many large holes, which results in very slow water pressure. However, in our Godrej model, the holes are small. Because of this, if there are any soap marks or stains on the shirt,",
-      tags: []
-    },
-    {
-      time: "[00:45 - 01:01]",
-      title: "",
-      text: "they are washed away very quickly due to the fast water pressure. Also, if ladies' sarees are washed in this, their threads will not get caught inside, ensuring a very safe wash. The fabric",
-      tags: []
-    },{
-      time: "[01:01 - 01:16]",
-      title: "",
-      text: "will not be damaged. And the third feature is Zero Pressure Technology. With this, in other brands, if the tank is at a minimum height of ten feet, it takes time to draw water at that",
-      tags: []
-    },
-    {
-      time: "[01:16 - 01:31]",
-      title: "",
-      text: "height. But with ours, it draws water quickly, which makes our wash program complete very easily. Our wash cycle won't be delayed, and it functions well optionally.",
-      tags: []
-    },{
-      time: "[01:31 - 01:46]",
-      title: "",
-      text: "Next, it has eight types of programs. The first one is Mixed Fabric. With Mixed Fabric, we can wash any type of cloth, and it washes very safely. And the second one is Whites. For whites, even if they are heavily soiled,",
-      tags: []
-    },{
-      time: "[01:46 - 02:01]",
-      title: "",
-      text: "whether it's white pants or other white fabrics, our washing becomes very fast, and any stains will be removed. Then there's Rapid 30. Suppose you go to functions or events, and even if there are no stains, clothes might have a lingering smell.",
-      tags: []
-    },{
-      time: "[02:01 - 02:16]",
-      title: "",
-      text: "To prevent that smell, by turning on the Rapid 30 option, even if the fabric has a smell, this one wash easily removes dirt and also the smell. And then there's Bulky. With this Bulky option, if we wash bed sheets or any",
-      tags: []
-    },{
-      time: "[02:16 - 02:31]",
-      title: "",
-      text: "heavy clothes, they get washed easily with the Bulky mode. And Baby Care. If we wash children's clothes, the fabric will not be damaged at all. And we can also wash woolen clothes. And a major feature",
-      tags: []
-    },{
-      time: "[02:31 - 02:47]",
-      title: "",
-      text: "is Tub Clean. Currently, in most areas, borewell water is being used, which leads to the formation of tub scale. White spots appearing is one issue. This results in the tub getting dirty. By turning on the Tub Clean option,",
-      tags: []
-    },{
-      time: "[02:47 - 03:02]",
-      title: "",
-      text: "our fabrics won't get any residue stuck to them, and these stains also disappear due to the Tub Clean option. And our motor comes with a 12-year warranty, and there's a 3-year total warranty. For financing, we have IDFC available from our side.",
-      tags: []
-    },{
-      time: "[03:02 - 03:17]",
-      title: "",
-      text: "It's available for four hours. With zero down payment and 10/2 payment plan. Regarding service centers, we have 700+ service centers, and we have 4400+ staff for service. So there won't be any problem with service either.",
-      tags: []
-    },{
-      time: "[03:17 - 00:00]",
-      title: "",
-      text: "We are available 24 hours.",
-      tags: []
-    },
-    // add more blocks
-  ],
+english: [
+  {
+    time: "[00:00 - 00:15]",
+    title: "",
+    text: "Hi sir, my name is Venkatesh Naik. I am working for Godrej in Piduguralla. Now, let's learn about the Godrej BC. Godrej is India's number one brand. For 108 years,",
+    tags: []
+  },
+  {
+    time: "[00:15 - 00:30]",
+    title: "",
+    text: "it has been a journey of trusted service. Let's explore the features of this Marvell 207C, frost-free, wine color model.",
+    tags: []
+  },
+  {
+    time: "[00:30 - 00:48]",
+    title: "",
+    text: "In this,",
+    tags: []
+  },
+  {
+    time: "[00:48 - 01:03]",
+    title: "",
+    text: "if you put items, it provides freshness for up to 24 days. It helps us prevent bacteria or fungus from affecting the food, as it comes with advanced cooling technology. What's special about this advanced feature is that, typically, gas leakage occurs, sir, which",
+    tags: []
+  },
+  {
+    time: "[01:03 - 01:19]",
+    title: "",
+    text: "results in us quickly losing cooling. The internal space is also very generous. This means it is very comfortable for us to place items side-by-side in the house.",
+    tags: []
+  },
+  {
+    time: "[01:19 - 01:37]",
+    title: "",
+    text: "or if not,",
+    tags: []
+  },
+  {
+    time: "[01:37 - 01:52]",
+    title: "",
+    text: "you can also store 2-liter water bottles, with quick cooling. It comes with toughened glass, supports weight, and has 360-degree cooling layers for us.",
+    tags: []
+  },
+  {
+    time: "[01:52 - 02:11]",
+    title: "",
+    text: "It prevents spoilage. It also significantly reduces expenditure. Another thing is, we have a vegetable box. What's special about this vegetable box is that it comes with a large 16.4-liter capacity, so",
+    tags: []
+  },
+  {
+    time: "[02:11 - 02:27]",
+    title: "",
+    text: "you can store a lot. Another point is, when we put vegetables, we seal them, right? After sealing them, what happens is that we don't encounter",
+    tags: []
+  },
+  {
+    time: "[02:27 - 02:42]",
+    title: "",
+    text: "moisture forming. That moisture does not form, meaning, usually when water falls on vegetables, they rot. To prevent that rotting, if you use this honeycomb material, the moisture will not rise. By drawing it up, what happens is there's more freshness, due to which we can also use vegetables for a bit",
+    tags: []
+  },
+  {
+    time: "[02:42 - 02:57]",
+    title: "",
+    text: "longer. Another thing, sir, is that it can hold four 2.25-liter cold drink bottles. You can store four, and also liter bottles. To put it simply, we can store small items like the pickles or garlic we bring home.",
+    tags: []
+  },
+  {
+    time: "[02:57 - 03:16]",
+    title: "",
+    text: "It's possible because it's available to us.",
+    tags: []
+  },
+  {
+    time: "[03:16 - 03:55]",
+    title: "",
+    text: "It comes with a warranty until January 25, 2025, which makes it very good. In this,",
+    tags: []
+  },
+  {
+    time: "[04:10 - 04:29]",
+    title: "",
+    text: "we will get good results. For this, too, they call it advanced cooling, right?",
+    tags: []
+  }
+],
+
 
 
 

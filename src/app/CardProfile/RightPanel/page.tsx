@@ -1,8 +1,12 @@
 // components/RightPanel.jsx
+
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import WeeklyNudges from "./WeeklyNudges";
 import Link from "next/link";
 const RightPanel = () => {
+  const [activeTab, setActiveTab] = useState<"weekly" | "local">("weekly");
   return (
     <div className="rounded-xl bg-[#F4F8FF] p-5">
       {/* Header Section */}
@@ -56,7 +60,7 @@ const RightPanel = () => {
         <div className="">
           <p className="text-lg text-[#03070D] leading-relaxed">
             Please provide the detailed analytics for the video uploaded by
-            Bharat Rawat, including the video file, transcript and relevant
+            Venkatesh Naik, including the video file, transcript and relevant
             indexes
           </p>
 
@@ -194,21 +198,46 @@ const RightPanel = () => {
         </div>
       </div>
 
-        <div>
-          <div className="flex items-center gap-2.5 mb-6 mt-11">
-            <Image
-            src={'/images/icons/format.svg'}
-            alt={'icon'}
+      <div>
+        <div className="flex items-center gap-10 mb-6 mt-11 bg-white w-[calc(100%_+_2.5rem)] ml-[-1.25rem] px-5 py-1">
+          {/* <Image
+            src={"/images/icons/format.svg"}
+            alt={"icon"}
             width={20}
             height={20}
             className="w-7 h-7"
-            />
-            <span className="text-lg font-medium text-[#03070D]">Weekly Nudges</span>
-          </div>
-          <div className="space-y-2">
-              <WeeklyNudges nudges={nudges} />
-          </div>
+          /> */}
+          <button
+            onClick={() => setActiveTab("weekly")}
+            className={`text-lg font-medium cursor-pointer py-2.5 ${
+              activeTab === "weekly" ? "border-b-2 border-[#6243F0]" : "text-[#03070D]"
+            }`}
+          >
+            Weekly Nudges
+          </button>
+          {/* <span className="text-lg font-medium text-[#03070D]">/</span> */}
+          <button
+            onClick={() => setActiveTab("local")}
+            className={`text-lg font-medium cursor-pointer py-2.5 ${
+              activeTab === "local" ? "border-b-2 border-[#6243F0]" : "text-[#03070D]"
+            }`}
+          >
+            వీక్లీ నడ్జెస్
+          </button>
         </div>
+
+        {activeTab === "weekly" && (
+          <div className="space-y-2">
+            <WeeklyNudges nudges={nudges} />
+          </div>
+        )}
+
+        {activeTab === "local" && (
+          <div className="space-y-2">
+            <WeeklyNudges nudges={LocalNudges} />
+          </div>
+        )}
+    </div>
 
 
 
@@ -217,9 +246,14 @@ const RightPanel = () => {
 };
 
 const nudges = [
-  { id: 1, title: "", description: "Hi Durga, the energy in your convertible options from 37s is there, and tying in vacation needs is a good start. But honestly, that quicker pace on tech like Nano Sheet at 152s comes off a bit rushed—it's holding back the full impact. Dial it in with a solid 'picture this' pause this week to make those details stick. You've got the potential; let's sharpen it up. ⚡" },
-  { id: 2, title: "", description: "Durga, linking features to trips and power saves helps, but the clasped hands at 07:38? It's pulling down that confident edge a notch—customers notice. Switch to open gestures to really own the room. You're close to nailing it; one tweak away from great.🙌👐" },
+  { id: 1, title: "", description: "Hi Venkatesh, your explanation of the '24-day freshness' feature at [01:03] is a great example of focusing on a key customer benefit. To make it even more impactful, try adding a short, 2-second pause right after stating a powerful fact like that. This gives the customer a moment to absorb the value. Keep up the great work! 👍" },
+  { id: 2, title: "", description: "Venkatesh, your hands-on demonstration is a major strength—physically showing the storage space at [01:54] is incredibly effective. To take that to the next level, try inviting the customer to interact with the fridge themselves. A simple prompt like, 'Feel how sturdy this shelf is,' can make the experience even more memorable and persuasive. Great job making the product tangible! 🤝" },
 
+];
+
+const LocalNudges = [
+  { id: 1, title: "", description: "హాయ్ వెంకటేష్, [01:03] వద్ద '24-రోజుల ఫ్రెష్‌నెస్' ఫీచర్ గురించి మీరు వివరించిన తీరు, కస్టమర్ ప్రయోజనంపై దృష్టి పెట్టడానికి ఒక గొప్ప ఉదాహరణ. దీనిని మరింత ప్రభావవంతంగా చేయడానికి ఒక చిన్న సలహా: అలాంటి ఒక ముఖ్యమైన విషయాన్ని చెప్పిన తర్వాత, కస్టమర్ దాని విలువను గ్రహించడానికి ఒక రెండు సెకన్ల విరామం ఇవ్వండి. మీ పనితీరు చాలా బాగుంది, ఇలాగే కొనసాగించండి! 👍" },
+  { id: 2, title: "", description: "వెంకటేష్, మీరు చేతులతో ఉత్పత్తిని చూపిస్తూ వివరించడం మీ యొక్క పెద్ద బలం—[01:54] వద్ద మీరు స్టోరేజ్ స్పేస్‌ను భౌతికంగా చూపించడం చాలా ప్రభావవంతంగా ఉంది. దీనిని తదుపరి స్థాయికి తీసుకెళ్లడానికి, కస్టమర్‌ను ఫ్రిజ్‌తో స్వయంగా ఇంటరాక్ట్ అవ్వమని ఆహ్వానించండి. 'ఈ షెల్ఫ్ ఎంత దృఢంగా ఉందో మీరే చూడండి' వంటి ఒక సాధారణ వాక్యం, అనుభవాన్ని మరింత గుర్తుండిపోయేలా మరియు నమ్మశక్యంగా చేస్తుంది. ఉత్పత్తిని ప్రత్యక్షంగా అనుభూతి చెందేలా చేయడంలో చాలా బాగా చేశారు! 🤝" },
 ];
 
 const structuredData = [
